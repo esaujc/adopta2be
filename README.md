@@ -136,7 +136,7 @@ username - String // required & unique
 email - String // required & unique
 password - String // required
 level - Number
-favorites - [ObjectID<Speeches>]
+events - [ObjectID<Events>]
 ```
 
 member model
