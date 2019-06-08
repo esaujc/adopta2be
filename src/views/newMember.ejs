@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <div class="button-box">
+      <form action="/members" method="post">
+        <label>Membership Id: </label><input typer="text" id="membershipId" name="membershipId" required></br>
+        <label>Name: </label><input typer="text" id="name1" name="name1"></br>
+        <label>Has Membership: </label><input type="checkbox" id="hasMembershipId" name="hasMembershipId" value="false"></br>
+        <label>VinculaliaDate: </label><input type="date" id="vinculaliaDateUse" name="vinculaliaDateUse"></br>
+        <button class="button" type="submit">Create member</button>
+      </form>
+    </div>
+  </body>
+</html>

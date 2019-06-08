@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <div class="button-box">
+      
+      <% members.forEach(member => { %>
+        <%= member.membershipId %> <%= member.name1 %> <%= member.lastName1 %>
+        <a href="/members/<%= member.membershipId %>"><button class="button">See member</button></a> 
+        <a href="/members/<%= member.membershipId %>/edit"><button class="button">Edit member</button></a>
+        <form action="/members/<%= member.membershipId %>/delete" method="POST">
+          <input type="submit" value="Delete Member">
+        </form></br>
+        <% }) %>
+    </div>
+    <div>Add new member
+      <a href="/members/new">New Member</a>
+    </div>
+  </body>
+</html>
